@@ -32,6 +32,8 @@ const HookUseState = () => {
         <form action="">
           <input type="text" value={age} onChange = {(e) => setAge(e.target.value)}/>
         </form>
+        
+        <p>Você tem {age} anos!!</p>
         <hr />
     </div>
   )
