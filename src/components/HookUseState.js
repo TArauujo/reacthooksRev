@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-
+//1
 const HookUseState = () => {
   let userName = "João";
 
@@ -17,6 +17,9 @@ const HookUseState = () => {
   };
   console.log(name);
   
+ // 2
+  const [age, setAge] = useState(18);
+ 
     return (
     <div>
         
@@ -24,6 +27,11 @@ const HookUseState = () => {
         <p>Variável: {userName}</p>
         <p>UseState: {name}</p>
         <button onClick = {changeNames}>Mudar Names</button>
+        
+        {/* 2 */}
+        <form action="">
+          <input type="text" value={age} onChange = {(e) => setAge(e.target.value)}/>
+        </form>
         <hr />
     </div>
   )
